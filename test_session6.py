@@ -88,15 +88,16 @@ def test_session6_function_name_had_cap_letter():
         assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
 
 def test_generate_deck_using_Normal_func():
-    assert session6.generate_deck(suits,value) == ['2spades', '3spades', '4spades', '5spades', '6spades', '7spades', '8spades', 
-    '9spades', '10spades', 'jackspades', 'queenspades', 'kingspades', 'acespades', '2clubs', '3clubs', '4clubs', '5clubs', '6clubs', '7clubs', '8clubs', '9clubs', '10clubs', 'jackclubs', 'queenclubs', 'kingclubs', 'aceclubs', '2hearts', '3hearts', '4hearts', '5hearts', '6hearts', '7hearts', '8hearts', '9hearts', '10hearts', 'jackhearts', 'queenhearts', 'kinghearts', 'acehearts', '2diamonds', '3diamonds', '4diamonds', '5diamonds', '6diamonds', '7diamonds', '8diamonds', 
-    '9diamonds', '10diamonds', 'jackdiamonds', 'queendiamonds', 'kingdiamonds', 'acediamonds'], 'Deck is not generated properly'
+    assert session6.generate_deck(suits,value) == ['spades2', 'spades3', 'spades4', 'spades5', 'spades6', 'spades7', 'spades8', 'spades9', 'spades10', 'spadesjack', 'spadesqueen', 'spadesking', 'spadesace',
+ 'clubs2', 'clubs3', 'clubs4', 'clubs5', 'clubs6', 'clubs7', 'clubs8', 'clubs9', 'clubs10', 'clubsjack', 'clubsqueen', 'clubsking', 'clubsace',
+ 'hearts2', 'hearts3', 'hearts4', 'hearts5', 'hearts6', 'hearts7', 'hearts8', 'hearts9', 'hearts10', 'heartsjack', 'heartsqueen', 'heartsking', 'heartsace',
+ 'diamonds2', 'diamonds3', 'diamonds4', 'diamonds5', 'diamonds6', 'diamonds7', 'diamonds8', 'diamonds9', 'diamonds10', 'diamondsjack', 'diamondsqueen', 'diamondsking', 'diamondsace'], 'functionality not working as expected'
 
 
 def test_generate_deck_lambda_map_zip():
     assert session6.generate_deck_using_lambda_map_zip(suits,value) == ['2spades', '3clubs', '4hearts', '5diamonds', '6spades',
      '7clubs', '8hearts', '9diamonds', '10spades', 'jackclubs', 'queenhearts', 'kingdiamonds', 'acespades', '2clubs', '3hearts', '4diamonds', '5spades', '6clubs', '7hearts', '8diamonds', '9spades', '10clubs', 'jackhearts', 'queendiamonds', 'kingspades', 'aceclubs', '2hearts', '3diamonds', '4spades', '5clubs', '6hearts', '7diamonds', '8spades', '9clubs', '10hearts', 'jackdiamonds', 'queenspades', 'kingclubs', 'acehearts', '2diamonds', '3spades', '4clubs', '5hearts', '6diamonds', '7spades',
-     '8clubs', '9hearts', '10diamonds', 'jackspades', 'queenclubs', 'kinghearts', 'acediamonds'], 'Deck is not generated properly'
+     '8clubs', '9hearts', '10diamonds', 'jackspades', 'queenclubs', 'kinghearts', 'acediamonds'], 'functionality not working as expected'
      
 def test_fib_check():
     assert session6.fib_check(55) == True, "functionality not working as expected"
