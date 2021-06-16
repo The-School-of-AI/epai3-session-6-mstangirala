@@ -23,6 +23,8 @@ def generate_deck(value, suits):
     # Returns:
         A list is returned containing the result of combination of value and suits.
     '''
+    value = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace']
+    suits = ['spades', 'clubs', 'hearts', 'diamonds']
     deck = [i+j for i in suits for j in value]
     return deck
 
@@ -31,6 +33,8 @@ generate_deck(value, suits)
 # Function generate deck of 52 cards Solely using map, lambda and zip function
 def generate_deck_using_lambda_map_zip(value, suits):
     # using lambda zip and map fubction
+    value = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace']
+    suits = ['spades', 'clubs', 'hearts', 'diamonds']
     x = list(map(lambda cards: ''.join(cards), zip(suits*len(value), value*len(suits))))
     return x
 
