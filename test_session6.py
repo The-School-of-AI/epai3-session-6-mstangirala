@@ -100,9 +100,7 @@ def test_generate_deck_lambda_map_zip():
     assert session6.generate_deck_using_lambda_map_zip(suits,value) == ['2spades', '3clubs', '4hearts', '5diamonds', '6spades',
      '7clubs', '8hearts', '9diamonds', '10spades', 'jackclubs', 'queenhearts', 'kingdiamonds', 'acespades', '2clubs', '3hearts', '4diamonds', '5spades', '6clubs', '7hearts', '8diamonds', '9spades', '10clubs', 'jackhearts', 'queendiamonds', 'kingspades', 'aceclubs', '2hearts', '3diamonds', '4spades', '5clubs', '6hearts', '7diamonds', '8spades', '9clubs', '10hearts', 'jackdiamonds', 'queenspades', 'kingclubs', 'acehearts', '2diamonds', '3spades', '4clubs', '5hearts', '6diamonds', '7spades',
      '8clubs', '9hearts', '10diamonds', 'jackspades', 'queenclubs', 'kinghearts', 'acediamonds'], 'functionality not working as expected'
-     
-def test_fib_check():
-    assert session6.fib_check(55) == True, "functionality not working as expected"
+
 
 def test_even_odd():
     assert session6.even_odd([2,4,6,9,10,22,33], [12,4,7,16,15,25,26]) == [13, 25, 47], "functionality not working as expected"
