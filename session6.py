@@ -6,7 +6,7 @@ from functools import partial
 import string
 import re
 import urllib
-import requests
+#import requests
 
 value = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace']
 suits = ['spades', 'clubs', 'hearts', 'diamonds']
@@ -95,14 +95,14 @@ def shift_5_char(str):
 
 
 # checks whether a string matches any of the swear words mentioned in https://github.com/RobertJGabriel/Google-profanity-words/blob/master/list.txt
-response = requests.get("https://raw.githubusercontent.com/RobertJGabriel/Google-profanity-words/master/list.txt")
-data = response.text
-data
-def profane_filter(str):
-    if len(str) <= 1:
-        raise ValueError("string should have more than one character")
-    else:
-        return True if str.lower() in data else False
+# response = requests.get("https://raw.githubusercontent.com/RobertJGabriel/Google-profanity-words/master/list.txt")
+# data = response.text
+# data
+# def profane_filter(str):
+#     if len(str) <= 1:
+#         raise ValueError("string should have more than one character")
+#     else:
+#         return True if str.lower() in data else False
 
 # Using reduce , lambda etc the even numbers in a list must be added.
 def add_even_num(l):
