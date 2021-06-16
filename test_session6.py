@@ -11,7 +11,6 @@ from functools import reduce
 from functools import partial
 
 README_CONTENT_CHECK_FOR = [
-    fib_check,
     even_odd,
     strip_vowel_str,
     relu_activation,
