@@ -11,10 +11,10 @@ from functools import reduce
 from functools import partial
 
 README_CONTENT_CHECK_FOR = [
-    even_odd,
-    strip_vowel_str,
-    relu_activation,
-    sigmoid_activation
+    'even_odd',
+    'strip_vowel_str',
+    'relu_activation',
+    'sigmoid_activation'
 ]
 
 def test_session6_readme_exists():
