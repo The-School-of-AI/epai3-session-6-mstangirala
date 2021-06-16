@@ -119,9 +119,7 @@ def test_sigmoid_activation():
 
 def test_shift_5_char():
     assert session6.shift_5_char('abcde') == 'fghij', "functionality not working as expected"
-    
-def test_profane_filter():
-    assert session6.test_profane_filter('Fuck') == True, "functionality not working as expected"
+
 
 def test_add_even_num():
     assert session6.add_even_num([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == 30, "functionality not working as expected"
