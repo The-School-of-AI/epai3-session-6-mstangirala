@@ -109,7 +109,7 @@ def test_strip_vowel_str():
     assert session6.strip_vowel_str('python') == 'pythn', "functionality not working as expected"
 
 def test_relu_activation():
-    assert session6.relu_activation(-3, -2, -1, 0, 1, 2, 3.5]) == [0, 0, 0, 0, 1, 2, 3.5], "functionality not working as expected"
+    assert session6.relu_activation([-3, -2, -1, 0, 1, 2, 3.5]) == [0, 0, 0, 0, 1, 2, 3.5], "functionality not working as expected"
 
 def test_sigmoid_activation():
     assert sesssion6.sigmoid_activation([-3, -2, -1, 0, 1, 2, 3.5]) == [0.05, 0.12, 0.27, 0.5, 0.73, 0.88, 0.97], "functionality not working as expected"
