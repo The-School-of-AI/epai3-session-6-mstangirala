@@ -7,7 +7,6 @@ import os
 import inspect
 import re
 import math
-import requests
 from functools import reduce
 from functools import partial
 
