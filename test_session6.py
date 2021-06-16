@@ -1,12 +1,15 @@
 import pytest
 import random
+from collections import Counter
 import string
 import session6
 import os
 import inspect
 import re
 import math
-
+import requests
+from functools import reduce
+from functools import partial
 
 README_CONTENT_CHECK_FOR = [
     fib_check,
